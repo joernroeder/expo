@@ -1,9 +1,16 @@
 import { StackHeaderBackButton } from './StackHeaderBackButton';
+import { StackHeaderButton } from './StackHeaderButton';
 import { StackHeaderComponent } from './StackHeaderComponent';
-import { StackHeaderLeft } from './StackHeaderLeft';
-import { StackHeaderRight } from './StackHeaderRight';
+import { StackHeaderLeft, StackHeaderRight } from './StackHeaderLeftRight';
 import { StackHeaderSearchBar } from './StackHeaderSearchBar';
 import { StackHeaderTitle } from './StackHeaderTitle';
+import {
+  StackHeaderBadge,
+  StackHeaderIcon,
+  StackHeaderLabel,
+  StackHeaderMenu,
+  StackHeaderMenuAction,
+} from './common';
 
 export const StackHeader = Object.assign(StackHeaderComponent, {
   Left: StackHeaderLeft,
@@ -11,6 +18,12 @@ export const StackHeader = Object.assign(StackHeaderComponent, {
   BackButton: StackHeaderBackButton,
   Title: StackHeaderTitle,
   SearchBar: StackHeaderSearchBar,
+  Button: StackHeaderButton,
+  Badge: StackHeaderBadge,
+  Label: StackHeaderLabel,
+  Icon: StackHeaderIcon,
+  Menu: StackHeaderMenu,
+  MenuAction: StackHeaderMenuAction,
 });
 
 export {
